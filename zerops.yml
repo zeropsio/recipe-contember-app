@@ -1,0 +1,7 @@
+admin:
+  build:
+    base: [ nodejs@14 ]
+    build:
+      - npm i
+      - npm run build
+    deploy: [ ./dist/recipe-contember-app/~/ ]
